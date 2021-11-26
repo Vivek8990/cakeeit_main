@@ -15,11 +15,14 @@
         
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <link href="flow.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
@@ -40,6 +43,7 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="team.html" class="nav-item nav-link">Chef</a>
                         <a href="booking.html" class="nav-item nav-link active">Coustomize Cake</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sign up/login</a>
                             <div class="dropdown-menu">
@@ -47,7 +51,7 @@
                                 <a href="register.html" class="dropdown-item">Register</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        
                     </div>
                 </div>
             </div>
@@ -60,7 +64,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Book A Table</h2>
+                        <h2>Coustomize Your Cake</h2>
                     </div>
                     <div class="col-12">
                         <a href="">Home</a>
@@ -72,271 +76,129 @@
         <!-- Page Header End -->
         
 
-        <!-- Booking Start -->
-        <div class="booking">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="booking-content">
-                            <div class="section-header">
-                                <p>Book A Table</p>
-                                <h2>Book Your Table For Private Dinners & Happy Hours</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="booking-form">
-                            <form>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Name" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+        <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+                    <div class="card card0 border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card card00 m-2 border-0">
+                                    <div class="row text-center justify-content-center px-3">
+                                        <p class="prev text-danger"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
+                                        <h3 class="mt-4">Cake Booking</h3>
+                                    </div>
+                                    <div class="d-flex flex-md-row px-3 mt-4 flex-column-reverse">
+                                        <div class="col-md-6">
+                                            <div class="card1">
+                                                <ul id="progressbar" class="text-center">
+                                                    <li class="active step0"></li>
+                                                    <li class="step0"></li>
+                                                    <li class="step0"></li>
+                                                    <li class="step0"></li>
+                                                </ul>
+                                                <h6 class="mb-5">Cake by Shape</h6>
+                                                <h6 class="mb-5">Cake by Flavour</h6>
+                                                <h6 class="mb-5">Cake by Occasion</h6>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card2 first-screen show ml-2">
+                                                <!--
+                                                <div class="row text-center px-3 mr-2">
+                                                    <div class="mb-2 col-2"> <span class="fa fa-reddit social"></span> </div>
+                                                    <div class="mb-2 col-2"> <span class="fa fa-facebook social"></span> </div>
+                                                    <div class="mb-2 col-2"> <span class="fa fa-linkedin social"></span> </div>
+                                                    <div class="mb-2 col-2"> <span class="fa fa-google-plus social"></span> </div>
+                                                    <div class="mb-2 col-2"> <span class="fa fa-twitter social"></span> </div>
+                                                    <div class="mb-2 col-2"> <span class="fa fa-dropbox social"></span> </div>
+                                                </div>
+                                                -->
+                                                <div class="row px-3 mt-4">
+                                                    <div class="form-group mt-1 mb-1">
+                                                        <label class="radio-img">
+                                                            <input type="radio" name="layout" value="L" />
+                                                            <div class="image" style="background-image: url(about.jpg)"></div>
+                                                          </label>
+                                                        
+                                                          <label class="radio-img">
+                                                            <input type="radio" name="layout" value="S|S|S" />
+                                                            <div class="image" style="background-image: url(http://loremflickr.com/620/440/london)"></div>
+                                                          </label>
+                                                        
+                                                          <label class="radio-img">
+                                                            <input type="radio" name="layout" value="M|M" />
+                                                            <div class="image" style="background-image: url(http://loremflickr.com/620/440/london)"></div>
+                                                          </label>
+                                                    </div>
+                                                    <div class="next-button text-center mt-1 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                </div>
+                                                <div class="row px-3 mt-1 mb-5">
+                                                    <div class="custom-control custom-checkbox"> <input checked id="customCheck1" type="checkbox" class="custom-control-input"> <label for="customCheck1" class="custom-control-label">I want this shape cake</label> </div>
+                                                </div>
+                                            </div>
+                                            <div class="card2 ml-2">
+                                                <div class="row px-3 mt-3">
+                                                    <div class="form-group mt-1 mb-1">
+                                                        <select name="" id="">
+                                                            <option value="">Select Flavour of Cake</option>
+                                                            <option value="">Choclate</option>
+                                                            <option value="">Vanilla</option>
+                                                            <option value="">Stawberry</option>
+                                                            <option value="">Cream</option>
+                                                            <option value="">Apple</option>
+                                                        </select>
+    
+                                                    </div>
+                                                    <div class="next-button text-center mt-1 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                </div>
+                                                <div class="row mt-3 mb-5">
+                                                    <div class="col-12">
+                                                        <p class="mb-1">Password must contain</p>
+                                                        <div class="row">
+                                                            <div class="col-6"><span class="fa fa-circle text-danger"></span> lower case</div>
+                                                            <div class="col-6"><span class="fa fa-circle text-danger"></span> numbers</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6"><span class="fa fa-circle text-danger"></span> upper case</div>
+                                                            <div class="col-6"><span class="fa fa-circle text-danger"></span> 8-16 characters</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card2 ml-2">
+                                                <div class="row px-3 mt-3">
+                                                    <p class="mb-0">Select your Occasion</p>
+                                                    <div class="form-group mt-3 mb-4">
+                                                        <div class="select mb-3">
+                                                            <div class="form-group mt-1 mb-1">
+                                                                <select name="" id="">
+                                                                    <option value="">Select Occasion for Cake</option>
+                                                                    <option value="">Marriage</option>
+                                                                    <option value="">Birthday</option>
+                                                                    <option value="">Engagement</option>
+                                                                </select>
+            
+                                                            </div>    
+                                                        </div>
+                                                    </div>
+                                                    <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="card2 ml-2">
+                                                <div class="row px-3 mt-2 mb-4 text-center">
+                                                    <h2 class="col-12 text-danger"><strong>Success !</strong></h2>
+                                                    <div class="col-12 text-center"><img class="tick" src="https://i.imgur.com/NFodZjZ.png"></div>
+                                                    <h6 class="col-12 mt-2"><i>...Your Cake is Ready...</i></h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
-                                        </div>
+                                <div class="col-12">
+                                    <div class="row px-3">
+                                        <!-- <h2 class="text-muted get-bonus mt-4 mb-5">Get Bonus <span class="text-danger">666</span> cookies</h2> <img class="pic ml-auto mr-3" src="https://i.imgur.com/WDI0da4.gif"> -->
                                     </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Mobile" required="required" />
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <select class="custom-select form-control">
-                                            <option selected>Guest</option>
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guest</option>
-                                            <option value="3">3 Guest</option>
-                                            <option value="4">4 Guest</option>
-                                            <option value="5">5 Guest</option>
-                                            <option value="6">6 Guest</option>
-                                            <option value="7">7 Guest</option>
-                                            <option value="8">8 Guest</option>
-                                            <option value="9">9 Guest</option>
-                                            <option value="10">10 Guest</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <button class="btn custom-btn" type="submit">Book Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Booking End -->
-        
-        
-        <!-- Menu Start -->
-        <div class="menu">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Food Menu</p>
-                    <h2>Delicious Food Menu</h2>
-                </div>
-                <div class="menu-tab">
-                    <ul class="nav nav-pills justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#burgers">Burgers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#snacks">Snacks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#beverages">Beverages</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="burgers" class="container tab-pane active">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Mini cheese Burger</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Double size burger</span> <strong>$11.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bacon, EGG and Cheese</span> <strong>$13.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Pulled porx Burger</span> <strong>$18.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Fried chicken Burger</span> <strong>$22.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-burger-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="snacks" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Corn Tikki - Spicy fried Aloo</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bread besan Toast</span> <strong>$35.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Healthy soya nugget snacks</span> <strong>$20.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Tandoori Soya Chunks</span> <strong>$30.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-snack-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="beverages" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Single Cup Brew</span> <strong>$7.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caffe Americano</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caramel Macchiato</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$8.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$12.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-beverage-img.jpg" alt="Image">
                                 </div>
                             </div>
                         </div>
@@ -344,7 +206,10 @@
                 </div>
             </div>
         </div>
-        <!-- Menu End -->
+    
+        
+        
+       
 
 
         <!-- Footer Start -->
@@ -420,5 +285,77 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+    
+    var current_fs, next_fs, previous_fs;
+    
+    // No BACK button on first screen
+    if($(".show").hasClass("first-screen")) {
+    $(".prev").css({ 'display' : 'none' });
+    }
+    
+    // Next button
+    $(".next-button").click(function(){
+    
+    current_fs = $(this).parent().parent();
+    next_fs = $(this).parent().parent().next();
+    
+    $(".prev").css({ 'display' : 'block' });
+    
+    $(current_fs).removeClass("show");
+    $(next_fs).addClass("show");
+    
+    $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+    
+    current_fs.animate({}, {
+    step: function() {
+    
+    current_fs.css({
+    'display': 'none',
+    'position': 'relative'
+    });
+    
+    next_fs.css({
+    'display': 'block'
+    });
+    }
+    });
+    });
+    
+    // Previous button
+    $(".prev").click(function(){
+    
+    current_fs = $(".show");
+    previous_fs = $(".show").prev();
+    
+    $(current_fs).removeClass("show");
+    $(previous_fs).addClass("show");
+    
+    $(".prev").css({ 'display' : 'block' });
+    
+    if($(".show").hasClass("first-screen")) {
+    $(".prev").css({ 'display' : 'none' });
+    }
+    
+    $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("active");
+    
+    current_fs.animate({}, {
+    step: function() {
+    
+    current_fs.css({
+    'display': 'none',
+    'position': 'relative'
+    });
+    
+    previous_fs.css({
+    'display': 'block'
+    });
+    }
+    });
+    });
+    
+    });
+        </script>
     </body>
 </html>
