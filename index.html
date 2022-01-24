@@ -13,6 +13,9 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -32,16 +35,18 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Cake <span>It</span></a>
+            
+            <a href="index.html" class="navbar-brand">Cakee it</span></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
+            
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
+                <div class="navbar-nav ml-auto" style="margin-top:30px ;padding-top:20px;z-index: 1000;">
+                    
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="team.html" class="nav-item nav-link">Chef</a>
+                    <a href="team.html" class="nav-item nav-link">Our Bakers</a>
                     <a href="booking.html" class="nav-item nav-link">Coustomize Cake</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <a href="work.html" class="nav-item nav-link">Work With Us</a>
@@ -52,7 +57,26 @@
                             <a href="register.html" class="dropdown-item">Register</a>
                         </div>
                     </div>
+                
                     
+                </div>
+                <div class="top_nav">
+                    <ul>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-user-circle"></i>
+                            <p>profile</p>
+                        </a></li>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Your City</p>
+                            
+                        </a></li>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Shopping Cart</p>
+    
+                        </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -89,7 +113,7 @@
                         <!--<img src="img/carousel-2.jpg" alt="Image">-->
                     </div>
                     <div class="carousel-text">
-                        <h1>World’s <span>Best</span> Chef</h1>
+                        <h1>World’s <span>Best</span> Bakers</h1>
                         <p>
                             Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci
                             sodales varius fermentum, tortor
@@ -122,6 +146,7 @@
         </div>
     </div>
     <!-- Carousel End -->
+
 
     <!-- content -->
     <section>
@@ -184,45 +209,49 @@
 
 
 
-    <!-- About Start -->
-    <div class="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="https://w7.pngwing.com/pngs/582/494/png-transparent-cook-chef-cake-division-food-hand-recipe.png" alt="Image">
+    
+
+    <!-- lead cards start -->
+    <div class="lead_custom_cards">
+        <div class="lead_card">
+            <div class="lead_text">
+                <p>Enter your number to talk with a baker</p>
+            </div>
+            <div class="lead_content_input">
+                <form action="">
+                    <div class="lead_input">
+                        <input type="text" id="content_input" placeholder="Enter Number"/>
+                    </div>
+                    <div class="lead_button">
+                        <button class="lead_submit_button" type="submit">
+                            SEND
                         </button>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <div class="section-header">
-                            <p>About Us</p>
-                        </div>
-                        <div class="about-text">
-                            <p>
-                            <b> WHO ARE WE? </b><br>
-                                We are here to give you the best experience in customizing your own cake, with your own flavours, mix matching your cake colours, flavours, fillings, designs in your own way.
+                </form>
+            </div>
+        </div>
 
-                            </p>
-                            <p>
-                                Cakee it is an application to make your cake dream and celebrations come true. We provide you best, trustworthy and convenient online platform to choose and design the best cake for your friends, family and loved ones. <br>
+           <div><p class="or_devider">OR</p></div> 
 
-                                <b>What’s the one thing that you always ask for in any occasion?</b><br>
-                                Yes, the answer is always a CAKE---- A DELICIOUS CAKE
-                                Cakee it is there for you to make your birthday desire come true
-                                
-                            </p>
-                            <a class="btn custom-btn" href="">
-                                Coustomize Cake</a>
-                        </div>
+        <div class="lead_card">
+            <div class="lead_text">
+                <p>Upload image of a cake to Customize your cake</p>
+            </div>
+            <div class="lead_content_input">
+                <form action="">
+                    <div class="lead_input">
+                        <input type="file" id="content_input" placeholder="Enter Number"/>
                     </div>
-                </div>
+                    <div class="lead_button">
+                        <button class="lead_submit_button" type="submit">
+                            UPLOAD
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- About End -->
-
+    <!-- lead cards end -->
 
     
 
@@ -389,7 +418,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <p>Our Team</p>
-                <h2>Our Master Chef</h2>
+                <h2>Our Cake Bakers</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -404,8 +433,8 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Adam Phillips</h2>
-                            <p>CEO, Co Founder</p>
+                            <h2>Baker Name</h2>
+                            <p>Baker</p>
                         </div>
                     </div>
                 </div>
@@ -421,8 +450,8 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Dylan Adams</h2>
-                            <p>Master Chef</p>
+                            <h2>Baker Name</h2>
+                            <p>Baker</p>
                         </div>
                     </div>
                 </div>
@@ -438,8 +467,8 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Jhon Doe</h2>
-                            <p>Master Chef</p>
+                            <h2>Baker Name</h2>
+                            <p>Baker</p>
                         </div>
                     </div>
                 </div>
@@ -455,8 +484,8 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Josh Dunn</h2>
-                            <p>Master Chef</p>
+                            <h2>Baker Name</h2>
+                            <p>Baker</p>
                         </div>
                     </div>
                 </div>
@@ -531,7 +560,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Address</h3>
-                            <p>123 Street, NY, USA</p>
+                            <p>421301,Kalyan West,Maharastra,India</p>
                         </div>
                     </div>
                 </div>
@@ -542,7 +571,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Call Us</h3>
-                            <p>+012 345 6789</p>
+                            <p>+91 8356890168</p>
                         </div>
                     </div>
                 </div>
@@ -553,7 +582,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Email Us</h3>
-                            <p>info@example.com</p>
+                            <p>cakee.it1@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -681,6 +710,47 @@
     <!-- Blog End -->
 
 
+
+    <!-- About Start -->
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="https://w7.pngwing.com/pngs/582/494/png-transparent-cook-chef-cake-division-food-hand-recipe.png" alt="Image">
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header">
+                            <p>About Us</p>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                            <b> WHO ARE WE? </b><br>
+                                We are here to give you the best experience in customizing your own cake, with your own flavours, mix matching your cake colours, flavours, fillings, designs in your own way.
+
+                            </p>
+                            <p>
+                                Cakee it is an application to make your cake dream and celebrations come true. We provide you best, trustworthy and convenient online platform to choose and design the best cake for your friends, family and loved ones. <br>
+                            </div>
+                                <b>What’s the one thing that you always ask for in any occasion?</b><br>
+                                Yes, the answer is always a CAKE---- A DELICIOUS CAKE
+                                Cakee it is there for you to make your birthday desire come true
+                                
+                            </p>
+                            <a class="btn custom-btn" href="">
+                                Coustomize Cake</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
     <!-- Footer Start -->
     <div class="footer">
         <div class="container">
@@ -693,7 +763,7 @@
                                 
                                 <p><i class="fa fa-phone-alt"></i>+91 8356890168 </p>
                                 <p><i class="fa fa-envelope"></i>cakee.it1@gmail.com</p>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                <p><i class="fa fa-map-marker-alt"></i>421301,Kalyan West,Maharastra,India</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>

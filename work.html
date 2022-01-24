@@ -30,17 +30,21 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Cake <span>It</span></a>
+            
+            <a href="index.html" class="navbar-brand">Cakee it</span></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+            
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
+                <div class="navbar-nav ml-auto" style="margin-top:30px ;padding-top:20px;z-index: 1000;">
+                    
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="team.html" class="nav-item nav-link">Chef</a>
+                    <a href="team.html" class="nav-item nav-link">Our Bakers</a>
                     <a href="booking.html" class="nav-item nav-link">Coustomize Cake</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="work.html" class="nav-item nav-link">Work With Us</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sign up/login</a>
                         <div class="dropdown-menu">
@@ -48,7 +52,26 @@
                             <a href="register.html" class="dropdown-item">Register</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
+                    
+                </div>
+                <div class="top_nav">
+                    <ul>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-user-circle"></i>
+                            <p>profile</p>
+                        </a></li>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Your City</p>
+                            
+                        </a></li>
+                        <li class="top_nav_item"><a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Shopping Cart</p>
+    
+                        </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -75,19 +98,57 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <div class="card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <p class="text-center"><b> Are you a CAKE ARTIST who wants to go ahead and grow your own
-                                business?
-                                What’s the problem? </b><br><br>
-                            Investment, Time, Dedication?
-                            If yes, then Cakee it is here to help you fulfill your dreams.
-                            Connect with us now on :<br> <span class="text-success mt-2 p-2"><b><i>cakee.it1@gmail.com</i></b></span>
-                        </p>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
+                <div class="card card-statistics">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Want To Work With Our Team ? Fill The Form .</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="inputState">Select Role</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected="">Select Role</option>
+                                                    <option>Baker</option>
+                                                    <option>Shipping Partner</option>
+                                                </select>
+                                            </div></br>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Full Name*</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Full Name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Mobile Number*</label>
+                                                    <input type="number" class="form-control" id="inputPassword4" placeholder="Mobile Number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress">Email*</label>
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress2">Full Location*</label>
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Full Location">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-2">
+                                                    <label for="inputZip">Pin Code</label>
+                                                    <input type="number" class="form-control" placeholder="Pin Code">
+                                                </div>
+
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputCity">Password*</label>
+                                                    <input type="text" class="form-control" id="inputCity" placeholder="Password">
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <button type="submit" class="btn btn-success">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
             </div>
         </div>
     </div>
