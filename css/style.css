@@ -206,19 +206,26 @@ a:focus {
         display:flex;
     }
     .top_nav ul li{
-        margin:10px 30px;
+        margin:10px 20px;
     }
     
     .top_nav ul .top_nav_item a{
         display:flex;
-        align-items:center;
-        justify-content:center;
-        flex-direction: column;
+        /* align-items:center; */
+        /* justify-content:center; */
         text-transform: capitalize;
+    }
+    .top_nav_text{
+        line-height:0;
+        margin: 0px 10px
+
     }
     
     .top_nav ul li a .fas{
-        font-size:25px
+        font-size:32px;
+        text-align: center;
+        line-height:15px;
+
     } 
 }
 
@@ -270,6 +277,12 @@ a:focus {
     }
     .top_nav_item a .fas{
         font-size:30px;
+    }
+    .top_nav_text{
+        line-height:0;
+        text-align:center;
+        margin-top:10px;
+
     }
 
 
